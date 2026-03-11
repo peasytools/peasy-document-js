@@ -9,6 +9,10 @@ Pure TypeScript document conversion library for Markdown, HTML, CSV, JSON, and Y
 
 Part of the [Peasy Tools](https://peasytools.com) developer tools ecosystem.
 
+<p align="center">
+  <img src="demo.gif" alt="peasy-document demo — Markdown to HTML conversion in terminal" width="800">
+</p>
+
 ## Table of Contents
 
 - [Install](#install)

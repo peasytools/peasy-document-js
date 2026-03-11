@@ -1,6 +1,6 @@
 {
   "name": "peasy-document",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Document conversion library — Markdown, HTML, CSV, JSON, YAML. Zero dependencies, TypeScript-first.",
   "type": "module",
   "main": "dist/index.js",
