@@ -25,7 +25,9 @@ Part of the [Peasy Tools](https://peasytools.com) developer tools ecosystem.
   - [Table Formatting](#table-formatting)
 - [TypeScript Types](#typescript-types)
 - [API Reference](#api-reference)
-- [Also Available for Python](#also-available-for-python)
+- [REST API Client](#rest-api-client)
+- [Learn More](#learn-more)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -261,25 +263,69 @@ interface TableData {
 | `csvToHtml(source, delimiter?)` | CSV | HTML | `<table>` with `<thead>` and `<tbody>` |
 | `jsonToYaml(source)` | JSON | YAML | Objects, arrays, primitives, null handling |
 
-## Also Available for Python
+## REST API Client
 
-```bash
-pip install peasy-document
+The API client connects to the [PeasyFormats developer API](https://peasyformats.com/developers/) for tool discovery and content.
+
+```typescript
+import { PeasyDocumentClient } from "peasy-document";
+
+const client = new PeasyDocumentClient();
+
+// List available tools
+const tools = await client.listTools();
+console.log(tools.results);
+
+// Search across all content
+const results = await client.search("markdown");
+console.log(results);
+
+// Browse the glossary
+const glossary = await client.listGlossary({ search: "format" });
+for (const term of glossary.results) {
+  console.log(`${term.term}: ${term.definition}`);
+}
+
+// Discover guides
+const guides = await client.listGuides({ category: "document" });
+for (const guide of guides.results) {
+  console.log(`${guide.title} (${guide.audience_level})`);
+}
 ```
 
-The Python version provides the same 10 conversion functions with frozen dataclass results. See [peasy-document on PyPI](https://pypi.org/project/peasy-document/).
+Full API documentation at [peasyformats.com/developers/](https://peasyformats.com/developers/).
+
+## Learn More
+
+- **Tools**: [Markdown to HTML](https://peasyformats.com/tools/markdown-to-html/) · [CSV to JSON](https://peasyformats.com/tools/csv-to-json/) · [HTML to PDF](https://peasyformats.com/tools/html-to-pdf/) · [All Tools](https://peasyformats.com/)
+- **Guides**: [Markdown Guide](https://peasyformats.com/guides/convert/) · [All Guides](https://peasyformats.com/guides/)
+- **Glossary**: [Markdown](https://peasyformats.com/glossary/markdown/) · [CSV](https://peasyformats.com/glossary/csv/) · [All Terms](https://peasyformats.com/glossary/)
+- **Formats**: [Markdown](https://peasyformats.com/formats/markdown/) · [CSV](https://peasyformats.com/formats/csv/) · [All Formats](https://peasyformats.com/formats/)
+- **API**: [REST API Docs](https://peasyformats.com/developers/) · [OpenAPI Spec](https://peasyformats.com/api/openapi.json)
+
+## Also Available
+
+| Language | Package | Install |
+|----------|---------|---------|
+| **Python** | [peasy-document](https://pypi.org/project/peasy-document/) | `pip install "peasy-document[all]"` |
+| **Go** | [peasy-document-go](https://pkg.go.dev/github.com/peasytools/peasy-document-go) | `go get github.com/peasytools/peasy-document-go` |
+| **Rust** | [peasy-document](https://crates.io/crates/peasy-document) | `cargo add peasy-document` |
+| **Ruby** | [peasy-document](https://rubygems.org/gems/peasy-document) | `gem install peasy-document` |
 
 ## Peasy Developer Tools
 
+Part of the [Peasy Tools](https://peasytools.com) open-source developer ecosystem.
+
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| **peasy-document** | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Document conversion -- Markdown, HTML, CSV, JSON, YAML |
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | -- | PDF manipulation and conversion |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | -- | Image format conversion and optimization |
-| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text analysis and transformation |
-| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS minification and processing |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | File compression utilities |
-| peasy-convert | [PyPI](https://pypi.org/project/peasy-convert/) | -- | Unified CLI for all Peasy tools |
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, rotate, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress — [peasyimage.com](https://peasyimage.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, thumbnails, GIF — [peasyvideo.com](https://peasyvideo.com) |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS minify, format, analyze — [peasycss.com](https://peasycss.com) |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip compression — [peasytools.com](https://peasytools.com) |
+| **peasy-document** | **[PyPI](https://pypi.org/project/peasy-document/)** | **[npm](https://www.npmjs.com/package/peasy-document)** | **Markdown, HTML, CSV, JSON conversion — [peasyformats.com](https://peasyformats.com)** |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text case conversion, slugify, word count — [peasytext.com](https://peasytext.com) |
 
 ## License
 
