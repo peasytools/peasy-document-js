@@ -106,6 +106,8 @@ console.log(result.content);
 // <blockquote><p>Important note about the API</p></blockquote>
 ```
 
+Learn more: [Markdown to HTML Converter](https://peasyformats.com/doc/markdown-to-html/) · [Markdown vs Rich Text vs Plain Text](https://peasyformats.com/guides/markdown-vs-rich-text-vs-plain-text/) · [How to Convert Markdown to Other Formats](https://peasyformats.com/guides/how-to-convert-markdown-to-other-formats/)
+
 ### HTML Processing
 
 Extract plain text from HTML documents, convert HTML to Markdown, or turn plain text into HTML paragraphs.
@@ -144,6 +146,8 @@ console.log(html.content);
 // <p>Second paragraph.<br>With a line break.</p>
 ```
 
+Learn more: [HTML Entities Encoder](https://peasyformats.com/doc/html-entities/) · [Plain Text vs Rich Text vs Markdown](https://peasyformats.com/guides/plain-text-vs-rich-text-vs-markdown/) · [What is MIME Sniffing?](https://peasyformats.com/glossary/mime-sniffing/)
+
 ### CSV and JSON Conversion
 
 Transform between CSV and JSON formats with proper handling of quoted fields, commas inside values, escaped quotes, and custom delimiters. Roundtrip-safe.
@@ -170,6 +174,8 @@ console.log(csv.content);
 const tsv = csvToJson("name\tage\nAlice\t30", "\t");
 ```
 
+Learn more: [CSV vs JSON vs XML Data Formats](https://peasyformats.com/guides/csv-vs-json-vs-xml/) · [What is TSV?](https://peasyformats.com/glossary/tsv/) · [CSV Format Reference](https://peasyformats.com/formats/csv/)
+
 ### YAML Generation
 
 Convert JSON to YAML-like format without any external YAML library. Handles nested objects, arrays, strings, numbers, booleans, and null.
@@ -193,6 +199,8 @@ console.log(result.content);
 // debug: true
 // cache: null
 ```
+
+Learn more: [YAML JSON Converter](https://peasyformats.com/doc/yaml-json-converter/) · [JSON vs YAML vs TOML Configuration Formats](https://peasyformats.com/guides/json-vs-yaml-vs-toml/) · [YAML vs JSON vs TOML Configuration](https://peasyformats.com/guides/yaml-vs-json-vs-toml-configuration/)
 
 ### Table Formatting
 
@@ -228,6 +236,8 @@ console.log(html.content);
 //   </tbody>
 // </table>
 ```
+
+Learn more: [Document Format Interoperability Guide](https://peasyformats.com/guides/document-format-interoperability-guide/) · [What is Metadata Stripping?](https://peasyformats.com/glossary/metadata-stripping/) · [HTML Format Reference](https://peasyformats.com/formats/html/)
 
 ## TypeScript Types
 
@@ -297,10 +307,10 @@ Full API documentation at [peasyformats.com/developers/](https://peasyformats.co
 
 ## Learn More
 
-- **Tools**: [Format Identifier](https://peasyformats.com/doc/format-identifier/) · [MIME Type Lookup](https://peasyformats.com/doc/mime-type-lookup/) · [Markdown to HTML](https://peasyformats.com/doc/markdown-to-html/) · [All Tools](https://peasyformats.com/)
-- **Guides**: [JSON vs YAML vs TOML](https://peasyformats.com/guides/json-vs-yaml-vs-toml/) · [Text Encoding Guide](https://peasyformats.com/guides/text-encoding-utf8-ascii/) · [All Guides](https://peasyformats.com/guides/)
-- **Glossary**: [DOCX](https://peasyformats.com/glossary/docx/) · [JSON](https://peasyformats.com/glossary/) · [CSV](https://peasyformats.com/glossary/) · [All Terms](https://peasyformats.com/glossary/)
-- **Formats**: [JSON](https://peasyformats.com/formats/json/) · [CSV](https://peasyformats.com/formats/csv/) · [All Formats](https://peasyformats.com/formats/)
+- **Tools**: [Markdown to HTML](https://peasyformats.com/doc/markdown-to-html/) · [YAML JSON Converter](https://peasyformats.com/doc/yaml-json-converter/) · [Format Identifier](https://peasyformats.com/doc/format-identifier/) · [MIME Type Lookup](https://peasyformats.com/doc/mime-type-lookup/) · [Base64 Encoder](https://peasyformats.com/doc/base64-encoder/) · [URL Encoder](https://peasyformats.com/doc/url-encoder/) · [HTML Entities](https://peasyformats.com/doc/html-entities/) · [Line Ending Converter](https://peasyformats.com/doc/line-ending-converter/) · [Hex Dump Viewer](https://peasyformats.com/doc/hex-dump-viewer/) · [All Tools](https://peasyformats.com/)
+- **Guides**: [JSON vs YAML vs TOML](https://peasyformats.com/guides/json-vs-yaml-vs-toml/) · [CSV vs JSON vs XML](https://peasyformats.com/guides/csv-vs-json-vs-xml/) · [Text Encoding UTF-8 ASCII](https://peasyformats.com/guides/text-encoding-utf8-ascii/) · [Markdown vs Rich Text vs Plain Text](https://peasyformats.com/guides/markdown-vs-rich-text-vs-plain-text/) · [How to Convert Markdown to Other Formats](https://peasyformats.com/guides/how-to-convert-markdown-to-other-formats/) · [Document Format Interoperability Guide](https://peasyformats.com/guides/document-format-interoperability-guide/) · [YAML vs JSON vs TOML Configuration](https://peasyformats.com/guides/yaml-vs-json-vs-toml-configuration/) · [All Guides](https://peasyformats.com/guides/)
+- **Glossary**: [DOCX](https://peasyformats.com/glossary/docx/) · [EPUB](https://peasyformats.com/glossary/epub/) · [SVG](https://peasyformats.com/glossary/svg/) · [TSV](https://peasyformats.com/glossary/tsv/) · [ODF](https://peasyformats.com/glossary/odf/) · [MIME Sniffing](https://peasyformats.com/glossary/mime-sniffing/) · [File Signature](https://peasyformats.com/glossary/file-signature/) · [Metadata Stripping](https://peasyformats.com/glossary/metadata-stripping/) · [MessagePack](https://peasyformats.com/glossary/messagepack/) · [All Terms](https://peasyformats.com/glossary/)
+- **Formats**: [CSV](https://peasyformats.com/formats/csv/) · [JSON](https://peasyformats.com/formats/json/) · [HTML](https://peasyformats.com/formats/html/) · [Markdown](https://peasyformats.com/formats/md/) · [YAML](https://peasyformats.com/formats/yaml/) · [XML](https://peasyformats.com/formats/xml/) · [TOML](https://peasyformats.com/formats/toml/) · [TXT](https://peasyformats.com/formats/txt/) · [TSV](https://peasyformats.com/formats/tsv/) · [RTF](https://peasyformats.com/formats/rtf/) · [DOCX](https://peasyformats.com/formats/docx/) · [All Formats](https://peasyformats.com/formats/)
 - **API**: [REST API Docs](https://peasyformats.com/developers/) · [OpenAPI Spec](https://peasyformats.com/api/openapi.json)
 
 ## Also Available
