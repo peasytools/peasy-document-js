@@ -297,10 +297,10 @@ Full API documentation at [peasyformats.com/developers/](https://peasyformats.co
 
 ## Learn More
 
-- **Tools**: [Markdown to HTML](https://peasyformats.com/tools/markdown-to-html/) · [CSV to JSON](https://peasyformats.com/tools/csv-to-json/) · [HTML to PDF](https://peasyformats.com/tools/html-to-pdf/) · [All Tools](https://peasyformats.com/)
-- **Guides**: [Markdown Guide](https://peasyformats.com/guides/convert/) · [All Guides](https://peasyformats.com/guides/)
-- **Glossary**: [Markdown](https://peasyformats.com/glossary/markdown/) · [CSV](https://peasyformats.com/glossary/csv/) · [All Terms](https://peasyformats.com/glossary/)
-- **Formats**: [Markdown](https://peasyformats.com/formats/markdown/) · [CSV](https://peasyformats.com/formats/csv/) · [All Formats](https://peasyformats.com/formats/)
+- **Tools**: [Format Identifier](https://peasyformats.com/doc/format-identifier/) · [MIME Type Lookup](https://peasyformats.com/doc/mime-type-lookup/) · [Markdown to HTML](https://peasyformats.com/doc/markdown-to-html/) · [All Tools](https://peasyformats.com/)
+- **Guides**: [JSON vs YAML vs TOML](https://peasyformats.com/guides/json-vs-yaml-vs-toml/) · [Text Encoding Guide](https://peasyformats.com/guides/text-encoding-utf8-ascii/) · [All Guides](https://peasyformats.com/guides/)
+- **Glossary**: [DOCX](https://peasyformats.com/glossary/docx/) · [JSON](https://peasyformats.com/glossary/) · [CSV](https://peasyformats.com/glossary/) · [All Terms](https://peasyformats.com/glossary/)
+- **Formats**: [JSON](https://peasyformats.com/formats/json/) · [CSV](https://peasyformats.com/formats/csv/) · [All Formats](https://peasyformats.com/formats/)
 - **API**: [REST API Docs](https://peasyformats.com/developers/) · [OpenAPI Spec](https://peasyformats.com/api/openapi.json)
 
 ## Also Available
