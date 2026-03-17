@@ -4,6 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](https://www.npmjs.com/package/peasy-document)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-document-js/stars.svg)](https://github.com/peasytools/peasy-document-js)
 
 Pure TypeScript document conversion library for Markdown, HTML, CSV, JSON, and YAML transformations. Convert between 6 document formats with 10 conversion functions and frozen result objects -- all with zero runtime dependencies. Every conversion uses pure string processing, making it lightweight and fast for any JavaScript or TypeScript project.
 
